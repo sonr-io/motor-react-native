@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/sonr-io/motor-react-native/motor-react-native.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
-
+  s.vendored_frameworks = 'Frameworks/SonrMotor.framework'
   s.dependency "React-Core"
 end
