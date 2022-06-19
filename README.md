@@ -1,6 +1,6 @@
-# motor-react-native
+# Motor for React-Native
 
-React Native bindings for the Sonr Motor Node
+React Native bindings for the Sonr Motor Node. 
 
 ## Installation
 
@@ -19,6 +19,8 @@ const result = await newWallet();
 ```
 
 ## API Reference
+
+These methods are subject to change, as the library is being actively developed.
 
 | **Method**         | **Description**                                                              |        **Params**        | **Returns** |
 |--------------------|------------------------------------------------------------------------------|:------------------------:|:-----------:|
