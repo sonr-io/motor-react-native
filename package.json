@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/sonr-io/motor-react-native/motor-react-native",
-  "author": "Sonr Inc. <team@sonr.io> (https://github.com/sonr-io/motor-react-native)",
+  "repository": "https://github.com/sonr-io/motor-react-native",
+  "author": "Sonr Inc. <team@sonr.io> (https://github.com/sonr-io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonr-io/motor-react-native/motor-react-native/issues"
+    "url": "https://github.com/sonr-io/motor-react-native/issues"
   },
-  "homepage": "https://github.com/sonr-io/motor-react-native/motor-react-native#readme",
+  "homepage": "https://github.com/sonr-io/motor-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
