@@ -28,7 +28,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-
+!ios/Frameworks/SonrMotor.xcframework
 # Android/IJ
 #
 .classpath
@@ -37,6 +37,7 @@ project.xcworkspace
 .idea
 .project
 .settings
+!android/libs/io.sonr.motor.aar
 local.properties
 android.iml
 
