@@ -34,7 +34,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "sonr",
+    "motor"
   ],
   "repository": "https://github.com/sonr-io/motor-react-native",
   "author": "Sonr Inc. <team@sonr.io> (https://github.com/sonr-io)",
