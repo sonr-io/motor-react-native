@@ -18,6 +18,15 @@ import { newWallet } from "motor-react-native";
 const result = await newWallet();
 ```
 
+## To Do
+- [ ] Implement ExportWallet in Swift/Java/JS
+- [ ] Implement LoadWallet in Swift/Java/JS
+- [ ] Implement Address in Swift/Java/JS
+- [ ] Implement DidDoc in Swift/Java/JS
+- [ ] Implement ImportCredential in Swift/Java/JS
+- [ ] Implement Sign in Swift/Java/JS
+- [ ] Implement Verify in Swift/Java/JS
+
 ## API Reference
 
 These methods are subject to change, as the library is being actively developed.
