@@ -10,10 +10,11 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/sonr-io/motor-react-native/motor-react-native.git", :tag => "#{s.version}" }
+  s.platform = :ios, '13.0'
+  s.source           = { :path => './ios' }
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
-  s.vendored_frameworks = 'Frameworks/SonrMotor.framework'
+  s.vendored_frameworks = 'ios/Frameworks/SonrMotor.xcframework'
   s.dependency "React-Core"
+  s.swift_version = '5.0'
 end

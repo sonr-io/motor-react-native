@@ -1,15 +1,22 @@
-@objc(MotorReactNative)
-
+import Foundation
 import SonrMotor
-class MotorReactNative: NSObject, NSObject {
+
+@objc(MotorReactNative)
+class MotorReactNative: NSObject {
 
     @objc(multiply:withB:withResolver:withRejecter:)
     func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a*b)
     }
 
-    @objc(newWallet:withResolver:withRejecter:)
+    @objc(newWallet:withRejecter:)
     func newWallet(resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock)  {
-        SonrMotor.MotorNewWallet(reject)
+        var error : NSError?
+        let rawBuf = MotorNewWallet(nil, &error)
+        if let err = error {
+            reject("newWallet", err.localizedDescription, err)
+        } else {
+            resolve(rawBuf)
+        }
     }
 }

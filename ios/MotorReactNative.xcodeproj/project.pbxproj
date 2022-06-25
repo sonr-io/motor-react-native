@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C656A12285FD7E300440879 /* SonrMotor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C656A11285FD7E300440879 /* SonrMotor.framework */; };
+		7CE0377E2866948700B24F24 /* SonrMotor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE0377D2866948700B24F24 /* SonrMotor.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F4FF95D7245B92E800C19C63 /* MotorReactNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* MotorReactNative.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMotorReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMotorReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C656A11285FD7E300440879 /* SonrMotor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonrMotor.framework; sourceTree = "<group>"; };
+		7C70C01E2866AA7D000756FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CE0377D2866948700B24F24 /* SonrMotor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SonrMotor.xcframework; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* MotorReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorReactNative.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* MotorReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotorReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* MotorReactNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorReactNative.swift; sourceTree = "<group>"; };
@@ -36,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C656A12285FD7E300440879 /* SonrMotor.framework in Frameworks */,
+				7CE0377E2866948700B24F24 /* SonrMotor.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +66,8 @@
 		7C656A0E285FD5D900440879 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C656A11285FD7E300440879 /* SonrMotor.framework */,
+				7C70C01E2866AA7D000756FC /* Foundation.framework */,
+				7CE0377D2866948700B24F24 /* SonrMotor.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -177,10 +179,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -220,9 +223,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
