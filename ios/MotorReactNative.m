@@ -16,4 +16,8 @@ RCT_REMAP_METHOD(multiply,
   resolve(result);
 }
 
+RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName)
+{
+  return [[UIDevice currentDevice] name];
+}
 @end
