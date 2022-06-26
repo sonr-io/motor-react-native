@@ -6,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-const MotorReactNative = NativeModules.MotorReactNative
-  ? NativeModules.MotorReactNative
+const MotorModule = NativeModules.SNRMotorModule
+  ? NativeModules.SNRMotorModule
   : new Proxy(
       {},
       {
@@ -17,10 +17,14 @@ const MotorReactNative = NativeModules.MotorReactNative
       }
     );
 
+export function deviceName(): Promise<string> {
+  return MotorModule.deviceName();
+}
+
 export function multiply(a: number, b: number): Promise<number> {
-  return MotorReactNative.multiply(a, b);
+  return MotorModule.multiply(a, b);
 }
 
 export function newWallet(): Promise<Boolean> {
-  return MotorReactNative.newWallet();
+  return MotorModule.newWallet();
 }

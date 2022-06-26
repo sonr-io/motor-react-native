@@ -2,7 +2,7 @@
 #import "Motor/Motor.h"
 @implementation MotorReactNative
 
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(SNRMotorModule)
 
 // Example method
 // See // https://reactnative.dev/docs/native-modules-ios
@@ -16,9 +16,8 @@ RCT_REMAP_METHOD(multiply,
   resolve(result);
 }
 
-RCT_REMAP_METHOD(getName,
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_REMAP_METHOD(deviceName,
+                 successCallback:(RCTPromiseResolveBlock)resolve)
 {
   resolve([[UIDevice currentDevice] name]);
 }
@@ -28,7 +27,7 @@ RCT_REMAP_METHOD(newWallet,
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
     NSError *error = nil;
-    BOOL *result = SNRMotorNewWallet(&error);
+    BOOL result = MTRBindNewWallet(&error);
     if (error) {
         reject(@"error", @"error", error);
     } else {

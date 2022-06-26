@@ -11,7 +11,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		7CFC49F32868B9FE004E14FB /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFC49F22868B9FE004E14FB /* Motor.xcframework */; };
+		7C8BE28E2868DE10002122DC /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8BE28C2868DDE1002122DC /* Motor.xcframework */; };
 		7DCBFA041E3CCAA2CC284720 /* libPods-motorreactnativeexample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
@@ -28,6 +28,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = motorreactnativeexample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = motorreactnativeexample/main.m; sourceTree = "<group>"; };
 		1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-motorreactnativeexample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8BE28C2868DDE1002122DC /* Motor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Motor.xcframework; path = "../.yalc/motor-react-native/ios/Frameworks/Motor.xcframework"; sourceTree = "<group>"; };
 		7CFC49F22868B9FE004E14FB /* Motor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Motor.xcframework; path = ../../ios/Frameworks/Motor.xcframework; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = motorreactnativeexample/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -42,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CFC49F32868B9FE004E14FB /* Motor.xcframework in Frameworks */,
+				7C8BE28E2868DE10002122DC /* Motor.xcframework in Frameworks */,
 				7DCBFA041E3CCAA2CC284720 /* libPods-motorreactnativeexample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +70,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C8BE28C2868DDE1002122DC /* Motor.xcframework */,
 				7CFC49F22868B9FE004E14FB /* Motor.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */,

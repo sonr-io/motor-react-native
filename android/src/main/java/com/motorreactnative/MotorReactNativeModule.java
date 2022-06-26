@@ -31,13 +31,18 @@ public class MotorReactNativeModule extends ReactContextBaseJavaModule {
     }
 
   @ReactMethod
+  public void deviceName(Promise promise) {
+    promise.resolve(android.os.Build.MODEL);
+  }
+
+  @ReactMethod
   public void newWallet(Promise promise) {
     try {
-      final boolean result = motor.Motor.newWallet();
-      promise.resolve(result);
+      bind.Bind.newWallet();
     } catch (Exception e) {
       promise.reject(e);
     }
+    promise.resolve(true);
   }
 
 
