@@ -28,8 +28,9 @@
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "update-ex": "cd example && yalc update",
+    "pods": "cd example/ios && pod install",
+    "bootstrap": "yarn update-ex && yarn example && yarn && yarn pods"
   },
   "keywords": [
     "react-native",

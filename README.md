@@ -1,12 +1,37 @@
 # Motor for React-Native
 
-React Native bindings for the Sonr Motor Node. 
+React Native bindings for the Sonr Motor Node.
 
 ## Installation
+
+### For a `react-native` project
 
 ```sh
 npm install motor-react-native
 ```
+
+### For a `expo` project
+
+1. Eject the `expo` project.
+
+```sh
+expo eject
+
+// or
+
+yarn eject
+```
+
+2. Install the `motor-react-native` package.*
+
+```sh
+npm install motor-react-native
+```
+
+3. Embed Motor to your iOS project:
+    - Build Phases > Link Binary With Libraries > Add `Motor.xcframework`
+
+4. Run `pod install` in the `ios` directory.
 
 ## Usage
 

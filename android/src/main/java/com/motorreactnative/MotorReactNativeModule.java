@@ -30,5 +30,16 @@ public class MotorReactNativeModule extends ReactContextBaseJavaModule {
         promise.resolve(a * b);
     }
 
-    public static native int nativeMultiply(int a, int b);
+  @ReactMethod
+  public void newWallet(Promise promise) {
+    try {
+      final boolean result = motor.Motor.newWallet();
+      promise.resolve(result);
+    } catch (Exception e) {
+      promise.reject(e);
+    }
+  }
+
+
+  public static native int nativeMultiply(int a, int b);
 }

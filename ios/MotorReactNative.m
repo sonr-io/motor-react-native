@@ -1,5 +1,5 @@
 #import "MotorReactNative.h"
-
+#import "Motor/Motor.h"
 @implementation MotorReactNative
 
 RCT_EXPORT_MODULE()
@@ -16,8 +16,23 @@ RCT_REMAP_METHOD(multiply,
   resolve(result);
 }
 
-RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName)
+RCT_REMAP_METHOD(getName,
+                 withResolver:(RCTPromiseResolveBlock)resolve
+                 withRejecter:(RCTPromiseRejectBlock)reject)
 {
-  return [[UIDevice currentDevice] name];
+  resolve([[UIDevice currentDevice] name]);
+}
+
+RCT_REMAP_METHOD(newWallet,
+                 withResolver:(RCTPromiseResolveBlock)resolve
+                 withRejecter:(RCTPromiseRejectBlock)reject)
+{
+    NSError *error = nil;
+    BOOL *result = SNRMotorNewWallet(&error);
+    if (error) {
+        reject(@"error", @"error", error);
+    } else {
+        resolve(@(result));
+    }
 }
 @end
