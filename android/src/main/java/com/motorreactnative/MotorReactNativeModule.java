@@ -10,7 +10,7 @@ import com.facebook.react.module.annotations.ReactModule;
 
 @ReactModule(name = MotorReactNativeModule.NAME)
 public class MotorReactNativeModule extends ReactContextBaseJavaModule {
-    public static final String NAME = "MotorReactNative";
+    public static final String NAME = "SNRMotorModule";
 
     public MotorReactNativeModule(ReactApplicationContext reactContext) {
         super(reactContext);

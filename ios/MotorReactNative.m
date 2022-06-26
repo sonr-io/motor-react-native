@@ -1,5 +1,5 @@
 #import "MotorReactNative.h"
-#import "Motor/Motor.h"
+
 @implementation MotorReactNative
 
 RCT_EXPORT_MODULE(SNRMotorModule)
@@ -16,13 +16,13 @@ RCT_REMAP_METHOD(multiply,
   resolve(result);
 }
 
-RCT_REMAP_METHOD(deviceName,
+RCT_EXPORT_METHOD(deviceName,
                  successCallback:(RCTPromiseResolveBlock)resolve)
 {
   resolve([[UIDevice currentDevice] name]);
 }
 
-RCT_REMAP_METHOD(newWallet,
+RCT_EXPORT_METHOD(newWallet,
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {

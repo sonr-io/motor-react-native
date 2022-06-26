@@ -34,8 +34,13 @@ async function onClick(
 ): Promise<void> {
   const result = await multiply(5, 2);
   console.log(result);
-  const name = await newWallet();
-  console.log(name);
+  try {
+    const name = await newWallet();
+    console.log(name);
+  } catch (error) {
+    console.log(error);
+  }
+
   handler(result);
 }
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C1E76642868CACE0093D5CD /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E76632868CACE0093D5CD /* Motor.xcframework */; };
+		7C1E76642868CACE0093D5CD /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E76632868CACE0093D5CD /* Motor.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		7CFC49F52868BD07004E14FB /* libMotorReactNative.a in Sources */ = {isa = PBXBuildFile; fileRef = 134814201AA4EA6300B7C361 /* libMotorReactNative.a */; };
 /* End PBXBuildFile section */
 
