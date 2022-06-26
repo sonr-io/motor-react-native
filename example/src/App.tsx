@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { newWallet } from 'motor-react-native';
+import { multiply } from 'motor-react-native';
 
 export default function App() {
-  const [result] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    newWallet().then();
+    multiply(3, 7).then(setResult);
   }, []);
 
   return (

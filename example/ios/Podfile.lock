@@ -19,7 +19,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - motor-react-native (0.0.1):
+  - motor-react-native (0.1.0):
     - React-Core
   - RCTRequired (0.63.4)
   - RCTTypeSafety (0.63.4):
@@ -347,7 +347,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  motor-react-native: 5c57915d00310b8ae57ab5bbb51854aaa9211d62
+  motor-react-native: fa9aba45992508f685141793f5dd9119ce3a94ac
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
   RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
   React: b0a957a2c44da4113b0c4c9853d8387f8e64e615
@@ -370,6 +370,6 @@ SPEC CHECKSUMS:
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: 59d0fefb43baa0584dbdece2767388d221eec75b
+PODFILE CHECKSUM: 5c5adf3647ddc85f73ef8b90f6e2b5700870fe81
 
 COCOAPODS: 1.11.3

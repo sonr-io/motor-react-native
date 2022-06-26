@@ -1,12 +1,19 @@
-#import <React/RCTBridgeModule.h>
-#import <SonrMotor/SonrMotor.h>
-@interface RCT_EXTERN_MODULE(MotorReactNative, NSObject)
+#import "MotorReactNative.h"
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
+@implementation MotorReactNative
+
+RCT_EXPORT_MODULE()
+
+// Example method
+// See // https://reactnative.dev/docs/native-modules-ios
+RCT_REMAP_METHOD(multiply,
+                 multiplyWithA:(nonnull NSNumber*)a withB:(nonnull NSNumber*)b
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
+{
+  NSNumber *result = @([a floatValue] * [b floatValue]);
 
-RCT_EXTERN_METHOD(newWallet:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+  resolve(result);
+}
 
 @end
