@@ -33,6 +33,7 @@ async function onClick(
   handler: React.Dispatch<React.SetStateAction<number>>
 ): Promise<void> {
   const result = await multiply(5, 2);
+  console.log(result);
   handler(result);
 }
 
