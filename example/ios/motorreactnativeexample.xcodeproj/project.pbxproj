@@ -10,9 +10,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		16DA6F13B8999925C361FA6C /* libPods-motorreactnativeexample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A97494651DF1422DCB720B84 /* libPods-motorreactnativeexample.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		7CFC49F32868B9FE004E14FB /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFC49F22868B9FE004E14FB /* Motor.xcframework */; };
-		7DCBFA041E3CCAA2CC284720 /* libPods-motorreactnativeexample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		C2E899D2EBD940CD8D45A46E /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B29F66D24E42849149BED5 /* noop-file.swift */; };
@@ -20,18 +20,18 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		121BE473B2010360EB27F6EE /* Pods-motorreactnativeexample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motorreactnativeexample.debug.xcconfig"; path = "Target Support Files/Pods-motorreactnativeexample/Pods-motorreactnativeexample.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* motorreactnativeexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motorreactnativeexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = motorreactnativeexample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = motorreactnativeexample/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = motorreactnativeexample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = motorreactnativeexample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = motorreactnativeexample/main.m; sourceTree = "<group>"; };
-		1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-motorreactnativeexample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2292FE5ED4F5F6CBAC175111 /* Pods-motorreactnativeexample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motorreactnativeexample.debug.xcconfig"; path = "Target Support Files/Pods-motorreactnativeexample/Pods-motorreactnativeexample.debug.xcconfig"; sourceTree = "<group>"; };
 		7CFC49F22868B9FE004E14FB /* Motor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Motor.xcframework; path = ../../ios/Frameworks/Motor.xcframework; sourceTree = "<group>"; };
+		9D7A2ED26DB966C9A7B82C70 /* Pods-motorreactnativeexample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motorreactnativeexample.release.xcconfig"; path = "Target Support Files/Pods-motorreactnativeexample/Pods-motorreactnativeexample.release.xcconfig"; sourceTree = "<group>"; };
+		A97494651DF1422DCB720B84 /* libPods-motorreactnativeexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-motorreactnativeexample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = motorreactnativeexample/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		D7014AA1AC2220A2C9F4D30A /* Pods-motorreactnativeexample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motorreactnativeexample.release.xcconfig"; path = "Target Support Files/Pods-motorreactnativeexample/Pods-motorreactnativeexample.release.xcconfig"; sourceTree = "<group>"; };
 		E1B29F66D24E42849149BED5 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "motorreactnativeexample/noop-file.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-motorreactnativeexample/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFC49F32868B9FE004E14FB /* Motor.xcframework in Frameworks */,
-				7DCBFA041E3CCAA2CC284720 /* libPods-motorreactnativeexample.a in Frameworks */,
+				16DA6F13B8999925C361FA6C /* libPods-motorreactnativeexample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,7 @@
 			children = (
 				7CFC49F22868B9FE004E14FB /* Motor.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1649C37C50CFFA4DE27CC6A9 /* libPods-motorreactnativeexample.a */,
+				A97494651DF1422DCB720B84 /* libPods-motorreactnativeexample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 		D65327D7A22EEC0BE12398D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				121BE473B2010360EB27F6EE /* Pods-motorreactnativeexample.debug.xcconfig */,
-				D7014AA1AC2220A2C9F4D30A /* Pods-motorreactnativeexample.release.xcconfig */,
+				2292FE5ED4F5F6CBAC175111 /* Pods-motorreactnativeexample.debug.xcconfig */,
+				9D7A2ED26DB966C9A7B82C70 /* Pods-motorreactnativeexample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,13 +147,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "motorreactnativeexample" */;
 			buildPhases = (
-				4778CD91C01EFDD694C96CBF /* [CP] Check Pods Manifest.lock */,
+				8F6C018480B9AC4E457483AC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E10B985AA30BC1CBE356FC1B /* [CP] Copy Pods Resources */,
+				EC8CFAACBCE7E25C7296F916 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,7 +223,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\n`node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n";
 		};
-		4778CD91C01EFDD694C96CBF /* [CP] Check Pods Manifest.lock */ = {
+		8F6C018480B9AC4E457483AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,7 +245,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E10B985AA30BC1CBE356FC1B /* [CP] Copy Pods Resources */ = {
+		EC8CFAACBCE7E25C7296F916 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,7 +303,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 121BE473B2010360EB27F6EE /* Pods-motorreactnativeexample.debug.xcconfig */;
+			baseConfigurationReference = 2292FE5ED4F5F6CBAC175111 /* Pods-motorreactnativeexample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -337,7 +337,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7014AA1AC2220A2C9F4D30A /* Pods-motorreactnativeexample.release.xcconfig */;
+			baseConfigurationReference = 9D7A2ED26DB966C9A7B82C70 /* Pods-motorreactnativeexample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

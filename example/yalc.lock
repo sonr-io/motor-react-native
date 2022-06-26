@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "motor-react-native": {
+      "signature": "dd3348990307494aea12166ce65bb91b",
+      "file": true
+    }
+  }
+}

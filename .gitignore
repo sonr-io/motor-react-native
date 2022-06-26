@@ -41,7 +41,6 @@ project.xcworkspace
 local.properties
 android.iml
 .yalc
-yalc.lock
 
 # Cocoapods
 #
