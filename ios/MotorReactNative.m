@@ -1,5 +1,4 @@
 #import "MotorReactNative.h"
-
 @implementation MotorReactNative
 
 RCT_EXPORT_MODULE()
