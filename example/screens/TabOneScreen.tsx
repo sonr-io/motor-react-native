@@ -20,11 +20,11 @@ export default function TabOneScreen({}: RootTabScreenProps<'TabOne'>) {
         darkColor="rgba(255,255,255,0.1)"
       />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
-      {/* <Button
+      <Button
         title="Press me"
         color="#f194ff"
         onPress={() => onClick(setCount)}
-      /> */}
+      />
     </View>
   );
 }
