@@ -6,7 +6,7 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { Button } from 'react-native';
 import { RootTabScreenProps } from '../types';
-import { multiply } from 'motor-react-native';
+import { multiply, newWallet } from 'motor-react-native';
 import { useState } from 'react';
 export default function TabOneScreen({}: RootTabScreenProps<'TabOne'>) {
   const [count, setCount] = useState(0);
@@ -33,6 +33,9 @@ async function onClick(
   handler: React.Dispatch<React.SetStateAction<number>>
 ): Promise<void> {
   const result = await multiply(5, 2);
+  console.log(result);
+  const name = await newWallet();
+  console.log(name);
   handler(result);
 }
 

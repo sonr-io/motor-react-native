@@ -20,3 +20,7 @@ const MotorReactNative = NativeModules.MotorReactNative
 export function multiply(a: number, b: number): Promise<number> {
   return MotorReactNative.multiply(a, b);
 }
+
+export function newWallet(): Promise<Boolean> {
+  return MotorReactNative.newWallet();
+}

@@ -1,5 +1,4 @@
 #import "MotorReactNative.h"
-
 @implementation MotorReactNative
 
 RCT_EXPORT_MODULE()
@@ -16,8 +15,11 @@ RCT_REMAP_METHOD(multiply,
   resolve(result);
 }
 
-RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName)
+RCT_REMAP_METHOD(getName,
+                 withResolver:(RCTPromiseResolveBlock)resolve
+                 withRejecter:(RCTPromiseRejectBlock)reject)
 {
-  return [[UIDevice currentDevice] name];
+  resolve([[UIDevice currentDevice] name]);
 }
+
 @end

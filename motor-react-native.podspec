@@ -10,10 +10,12 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "10.0" }
+  s.platforms    = { :ios => "12.0" }
   s.source       = { :git => "https://github.com/sonr-io/motor-react-native.git", :tag => "#{s.version}" }
-  s.vendored_frameworks = 'ios/Frameworks/Motor.xcframework'
   s.source_files = "ios/**/*.{h,m,mm}"
-
   s.dependency "React-Core"
+  s.ios.vendored_frameworks = 'ios/Frameworks/Motor.xcframework'
+
+  # Flutter.framework does not contain a i386 slice.
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 end
