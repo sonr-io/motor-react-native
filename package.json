@@ -1,6 +1,6 @@
 {
   "name": "motor-react-native",
-  "version": "0.1.7",
+  "version": "0.1.10",
   "description": "React Native bindings for the Sonr Motor Node",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -29,7 +29,7 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "update-ex": "yalc push",
-    "pods": "cd example/ios && pod install",
+    "pods": "cd example/ios && EXPO_USE_SOURCE=1 pod install",
     "bootstrap": "yarn example && yarn && yarn update-ex && yarn pods"
   },
   "keywords": [

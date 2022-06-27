@@ -3,30 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C5BD9BA28692DDD00172048 /* Motor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BD9B928692DDD00172048 /* Motor.framework */; };
+		7C05F9C028693B020068FC77 /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C05F9BF28693B020068FC77 /* Motor.xcframework */; };
+		7C05F9C328693CB40068FC77 /* Motor.xcframework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 7C05F9BF28693B020068FC77 /* Motor.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CFC49F52868BD07004E14FB /* libMotorReactNative.a in Sources */ = {isa = PBXBuildFile; fileRef = 134814201AA4EA6300B7C361 /* libMotorReactNative.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		58B511D91A9E6C8500147676 /* Copy Files */ = {
+		58B511D91A9E6C8500147676 /* Copy Files (1 item) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 10;
 			files = (
+				7C05F9C328693CB40068FC77 /* Motor.xcframework in Copy Files (1 item) */,
 			);
-			name = "Copy Files";
+			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMotorReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMotorReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C5BD9B928692DDD00172048 /* Motor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motor.framework; path = ../../../../Desktop/Motor.framework; sourceTree = "<group>"; };
+		7C05F9BF28693B020068FC77 /* Motor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Motor.xcframework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* MotorReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorReactNative.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* MotorReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorReactNative.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5BD9BA28692DDD00172048 /* Motor.framework in Frameworks */,
+				7C05F9C028693B020068FC77 /* Motor.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +66,7 @@
 		7C00C4FE2867DE6D00F3D5E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C5BD9B928692DDD00172048 /* Motor.framework */,
+				7C05F9BF28693B020068FC77 /* Motor.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -78,7 +80,7 @@
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* Copy Files */,
+				58B511D91A9E6C8500147676 /* Copy Files (1 item) */,
 			);
 			buildRules = (
 			);
@@ -179,7 +181,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -247,7 +249,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MotorReactNative;
 				SKIP_INSTALL = YES;
