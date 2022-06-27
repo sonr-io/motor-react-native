@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C1E76642868CACE0093D5CD /* Motor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E76632868CACE0093D5CD /* Motor.xcframework */; };
+		7C5BD9BA28692DDD00172048 /* Motor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BD9B928692DDD00172048 /* Motor.framework */; };
 		7CFC49F52868BD07004E14FB /* libMotorReactNative.a in Sources */ = {isa = PBXBuildFile; fileRef = 134814201AA4EA6300B7C361 /* libMotorReactNative.a */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMotorReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMotorReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C1E76632868CACE0093D5CD /* Motor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Motor.xcframework; sourceTree = "<group>"; };
+		7C5BD9B928692DDD00172048 /* Motor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motor.framework; path = ../../../../Desktop/Motor.framework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* MotorReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorReactNative.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* MotorReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorReactNative.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1E76642868CACE0093D5CD /* Motor.xcframework in Frameworks */,
+				7C5BD9BA28692DDD00172048 /* Motor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		7C00C4FE2867DE6D00F3D5E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C1E76632868CACE0093D5CD /* Motor.xcframework */,
+				7C5BD9B928692DDD00172048 /* Motor.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +161,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -178,7 +179,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -211,6 +212,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -232,6 +234,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 $(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -256,6 +262,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

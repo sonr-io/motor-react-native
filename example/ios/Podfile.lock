@@ -33,7 +33,7 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.68.2)
   - fmt (6.2.1)
   - glog (0.3.5)
-  - motor-react-native (0.1.3):
+  - motor-react-native (0.1.6):
     - React-Core
   - RCT-Folly (2021.06.28.00-v2):
     - boost
@@ -477,7 +477,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: 81ce99032d5b586fddd6a38d450f8595f7e04be4
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 476ee3e89abb49e07f822b48323c51c57124b572
-  motor-react-native: 2dcf74e9e64ec9aace612171f40620cd136a151b
+  motor-react-native: 168253897a93b33a130bf00f234019e653f5dc4f
   RCT-Folly: 4d8508a426467c48885f1151029bc15fa5d7b3b8
   RCTRequired: 3e917ea5377751094f38145fdece525aa90545a0
   RCTTypeSafety: c43c072a4bd60feb49a9570b0517892b4305c45e
@@ -507,6 +507,6 @@ SPEC CHECKSUMS:
   RNScreens: 4d83613b50b74ed277026375dc0810893b0c347f
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
 
-PODFILE CHECKSUM: b67b52d7421dfdf75c73e96502347c1772bdee0d
+PODFILE CHECKSUM: a09a21897ea154e576f5b20e87f7862873565e1c
 
 COCOAPODS: 1.11.3

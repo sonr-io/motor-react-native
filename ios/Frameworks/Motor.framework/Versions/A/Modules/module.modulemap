@@ -1,0 +1,8 @@
+framework module "Motor" {
+	header "ref.h"
+    header "MTRBind.objc.h"
+    header "Universe.objc.h"
+    header "Motor.h"
+
+    export *
+}

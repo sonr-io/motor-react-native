@@ -6089,7 +6089,7 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 "motor-react-native@file:.yalc/motor-react-native":
-  version "0.1.0"
+  version "0.1.5"
 
 ms@2.0.0:
   version "2.0.0"
